@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+.top-bar a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+    
+}
+
+.top-bar a:hover{color: blue; text-decoration: none;}
+
+.top-bar {
+    justify-content: space-between;
+    display: flex;
+    height: 50px;
+    background-color: lightcoral;
+}
+
+.navigation {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    display: inline-block;
+    transition: border-bottom 0.5s;
+    margin-left: 5px;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid darkgreen;
+}
+
+.nav-link a:hover {
+    color:darkgreen;
+}
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
