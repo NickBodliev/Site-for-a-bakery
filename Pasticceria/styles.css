@@ -42,5 +42,15 @@ body {
     align-self: center;
     text-align: center;
     vertical-align: top;
-
 }
+#demo {
+    margin-top: 15px;
+}
+
+div.carousel-item {
+    position: relative;
+    width: 1350px;
+    height: 490px;
+    overflow: hidden;
+  }
+  
