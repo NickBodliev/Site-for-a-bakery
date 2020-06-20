@@ -1,22 +1,13 @@
-body {
-    margin: 0;
-    background-color: rgb(243, 241, 241);
-}
+body {margin: 0; background-color: rgb(243, 241, 241);}
 
+/* Top bar CSS */   
+.top-bar {height: 96px; background-color: rgb(247, 247, 170);}
 .top-bar a{
     text-decoration: none;
     color: black;
     transition: color 0.5s;
-    
 }
-
 .top-bar a:hover{color: blue; text-decoration: none;}
-
-.top-bar {
-    height: 96px;
-    background-color: rgb(247, 247, 170);
-}
-
 
 .nav-link {
     display: flex;
@@ -27,30 +18,27 @@ body {
     padding: 0;
     text-align: center;
 }
-
-.nav-link:hover {
-    border-bottom: 2px solid darkgreen;
-}
-
-.nav-link a:hover {
-    color:darkgreen;
-}
-
-
-
+.nav-link:hover {border-bottom: 1px solid darkgreen;}
+.nav-link a:hover {color:darkgreen;}
 #logo{
     align-self: center;
     text-align: center;
     vertical-align: top;
 }
-#demo {
-    margin-top: 15px;
-}
+
+/* Carousel CSS */
+
+#demo {margin-top: 15px;}
 
 div.carousel-item {
     position: relative;
     width: 1350px;
     height: 490px;
     overflow: hidden;
-  }
+}
+
+.bottom-bar {
+    border: 1px solid black;
+    
+}
   
