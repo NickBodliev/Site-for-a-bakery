@@ -51,6 +51,21 @@ div.carousel-item {
 }  
 
 
+/* Histiry ection */
+
+#history {
+    margin: 40px;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 1.5 em;
+}
+
+.card {
+    margin: 0 1%;
+}
+
+
 /* Footer */
 
 .footer {
