@@ -100,7 +100,14 @@ div.carousel-item {
     }
   }
   
-  
+ 
+  /* Contacts */
+
+#contacts {
+    margin: auto;
+    padding: 5%;
+    
+}
 
 
 
