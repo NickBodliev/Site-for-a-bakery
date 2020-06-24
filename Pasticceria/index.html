@@ -21,6 +21,11 @@
     <!--Riferimento al file css-->
     <link rel="stylesheet" type="text/css" href="styles.css">
 
+    <!-- Importing Bootstrap icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    
+
 </head>
 <body>
     <div class='main-container container-fluid' >
@@ -34,7 +39,7 @@
                 <a href='function()'><img src='logo.png' height='65px'></img></a>   <!-- Logo -->
             </div>
 
-            <div class="nav-link col"><a href='#menu'><h5>Menu</h5></a></div>   <!-- the link to "Menu" part-->
+            <div class="nav-link col"><a href='#menu'><h5>Menu <span class="glyphicon glyphicon-menu-down" style="font-size:12px;"></span></h5></a></div>   <!-- the link to "Menu" part-->  
             <div class="nav-link col"><a href='#contacts'><h5>Contatti</h5></a></div>   <!-- the link to "Contacts" part-->
             <div class="nav-link col"></div>
         </div>
@@ -162,12 +167,24 @@
         <div class="row" >
             <div class="col-1"></div>
             <div class="col-lg-3" align="center" id="contacts">
-                <p><h4>Le Campane</h4><h6>Via Caduti Di Vicobello 37 - 53100 Siena (SI)</h6><h6>Tel: 0577 282290</h6></p>
+                <p><h4>Le Campane</h4><h6><span class="glyphicon glyphicon-home"></span> Via Caduti Di Vicobello 37 - 53100 Siena (SI)</h6><h6><span class="glyphicon glyphicon-phone-alt"></span> Tel: 0577 282290</h6></p>
             </div>
             <div class="col-1"></div>
             <div class="col-lg-7">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.1792998109768!2d11.315340915381054!3d43.3314369811955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a2ce900a83e41%3A0x1a5171020e109b3c!2sPasticceria%20Le%20Campane!5e0!3m2!1sit!2sit!4v1592660096266!5m2!1sit!2sit" width=100% height=100% frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
+        </div>
+        
+        <!-- Div with the icons -->
+        <!-- Some of theese icons could be useful in the future -->
+        <div class="row">
+            <p>
+                <span class="glyphicon glyphicon-time"></span>  <!-- Clock icon, useful for "Orario" -->
+                <span class="glyphicon glyphicon-send"></span>  <!-- Sign of a send message, useful for email address-->
+                <span class="glyphicon glyphicon-menu-up"></span>  <!-- Sign of closing menu, useful if we want to make a menu with list method -->
+                <span class="glyphicon glyphicon-copyright-mark"></span>  <!-- Copyright mark -->
+                <span class="glyphicon glyphicon-console"></span>      <!-- Console sign, useful if we want to leave our names on this site -->
+            </p>
         </div>
 
         <!-- Footer -->
