@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record</title>
+</head>
+<body>
+    <div>
+        <label>Operation</label><br/>
+        <input type="text" id="id2"><br/><br/>
+        <label>Property</label><br/>
+        <input type="text" id="id3"><br/><br/>
+        <label>Value</label><br/>
+        <input type="text" id="id4"><br/><br/>
+        <input type="button" onclick="perFunc()" value="Button"/>
+    </div>
+    <div id="out"></div>
+
+    <script>
+        var i = 0;
+        var object, operation, property, value;
+
+        function updateParameters(){
+            operation = document.getElementById("id2").value;
+            property = document.getElementById("id3").value;
+            value = document.getElementById("id4").value;
+        }
+        
+        function propertyOfObjectExists(){
+            if (object[prop] !== undefined)
+                return true;
+        }
+
+        function perFunc (){
+            if(i === 0)
+                object = {color: "green", weight: 500};
+            updateParameters();
+            manipulateStudentRecord(object, operation, property, value);
+        }
+
+        function manipulateStudentRecord(object, operation, prop, newValue) {
+            operation = operation.toLowerCase();
+            switch(operation) {
+                case "create":
+                    if(object[prop] === undefined)
+                        object[prop] = newValue;
+                    break;
+                case "edit":
+                    if (propertyOfObjectExists())
+                        object[prop] = newValue;
+                    break;
+                case "delete":
+                    if (propertyOfObjectExists())
+                        delete object[prop];
+                    break;
+                default:
+                    var error = true;
+            }
+            if(error)
+                alert('Wrong operation!');
+            else{
+                document.getElementById('out').innerHTML = JSON.stringify(object);
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>
