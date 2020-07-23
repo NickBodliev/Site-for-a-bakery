@@ -19,35 +19,53 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     
     <!--Riferimento al file css-->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles3.css">
 
     <!-- Importing Bootstrap icons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     
     
 
 </head>
 <body>
     <div class='main-container container-fluid' >
-        <!-- Top bar -->
-        <div class='top-bar row'>
-            <div class='nav-link col'></div>   
-            <div class='nav-link col'><a href='#about'><h5>About</h5></a></div>   <!-- the link to "About" part -->
-            <div class="nav-link col"><a href='#history'><h5>History</h5></a></div>  <!-- the link to "History" section -->
-
-            <div class='col-6' id='logo'>
-                <a href='function()'><img src='logo.png' height='65px'></img></a>   <!-- Logo -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(247, 247, 170);">
+            <div class="container">
+                <a id="logo" href="#">
+                    <img src='logo.png' height='40px' alt="Logo"></img>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#history">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contact Us</a>
+                        </li>
+                    </ul>
             </div>
+            </div>
+        </nav>
 
-            <div class="nav-link col"><a href='#menu'><h5>Menu <span class="glyphicon glyphicon-menu-down" style="font-size:12px;"></span></h5></a></div>   <!-- the link to "Menu" part-->  
-            <div class="nav-link col"><a href='#contacts'><h5>Contatti</h5></a></div>   <!-- the link to "Contacts" part-->
-            <div class="nav-link col"></div>
-        </div>
-
+    
         <!--About section-->
         <div class="row d-flex justify-content-center">
             <div class="col-md-8 text-center" id="about">
-                <h2>Le Campane - About us</h2><br/>
+                <h2 class="mt-4">Le Campane - About us</h2><br/>
                 <p>La pasticceria Le Campane è un bar pasticceria a conduzione familiare situato a Siena 
                     nei pressi dell&#8217;Antiporto. La nostra produzione è completamente artigianale, 
                     i nostri prodotti vanno dalle brioches per la colazione alla pasticceria fresca e secca, 
